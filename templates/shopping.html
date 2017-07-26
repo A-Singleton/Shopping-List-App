@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<title>Shopping List</title>
+
+<link rel=" stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css')}}">
+
+<h1>Hey there, {{ name }}. Here's your shopping list! </h1>
+
+<ul>
+
+    {% for item in food %}
+
+    <li>{{item}}</li>
+
+    {% endfor %}
+
+</ul>
